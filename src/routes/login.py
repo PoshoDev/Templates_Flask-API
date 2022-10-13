@@ -1,8 +1,7 @@
-from src import app, loaf
-from src.services.access import token_required, verify
-
 import jwt
 from flask import jsonify, request
+from src import app
+from src.services.access import verify
 
 # Login function. Returns a token.
 @app.route('/login', methods=['POST'])
